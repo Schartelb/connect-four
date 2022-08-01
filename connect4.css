@@ -4,8 +4,10 @@
   width: 50px;
   height: 50px;
   border: solid 3px navy;
-  border-radius: 15px;
+  border-radius: 25px;
   border-color: navy; 
+  border-style: inset;
+align-items: center;
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -13,18 +15,34 @@
 .piece {
   /* TODO: make into circles */
   margin: 5px;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
 }
 
+.piece.p1{
+  margin: 3px;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.piece.p2{
+  margin: 3px;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: blue;
+}
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
 
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border: dashed 1px lightgray;
+  border: dashed 3px lightgray;
 }
 
 #column-top td:hover {
-  background-color: gold;
+  background-color: darkorange;
 }
